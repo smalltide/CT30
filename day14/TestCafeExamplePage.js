@@ -27,9 +27,9 @@ test("Example Page Test", async t => {
     .click(supportRemoteBox)
     // 4. 透過預定義的 selector macOSRadio 選擇 MacOS
     .click(macOSRadio)
-    // 5. 透過預定義的 selector interfaceSelect，按下選單彈出選項
+    // 5.1 透過預定義的 selector interfaceSelect，按下選單彈出選項
     .click(interfaceSelect)
-    // 5. 使用 ＴestCafe 鏈式 Selector API，找到 interfaceSelect 下的 Both Option
+    // 5.2 使用 ＴestCafe 鏈式 Selector API，找到 interfaceSelect 下的 Both Option
     .click(interfaceSelect.find("option").withText("Both"))
     // 6. 按下 Submit 按鈕
     .click("#submit-button")
