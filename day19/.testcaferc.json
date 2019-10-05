@@ -1,0 +1,24 @@
+{
+  "browsers": ["chrome"],
+  "speed": 1,
+  "concurrency": 1,
+  "src": ["tests"],
+  "reporter": [
+    {
+      "name": "spec"
+    },
+    {
+      "name": "json",
+      "output": "reports/report.json"
+    }
+  ],
+  "screenshotPath": "reports/screenshots",
+  "takeScreenshotsOnFails": true,
+  "videoPath": "reports/videos",
+  "videoOptions": {
+    "singleFile": false,
+    "failedOnly": false
+  },
+  "selectorTimeout": 3000,
+  "assertionTimeout": 3000
+}
