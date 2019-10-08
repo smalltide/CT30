@@ -1,0 +1,16 @@
+[
+  {
+    "name": "ice1",
+    "feature": "Support for testing on remote devices",
+    "os": "MacOS",
+    "interfaceOption": "JavaScript API",
+    "resultText": "Thank you, ice1!"
+  },
+  {
+    "name": "ice2",
+    "feature": "Advanced traffic and markup analysis",
+    "os": "Linux",
+    "interfaceOption": "Both",
+    "resultText": "Thank you, ice2!"
+  }
+]
