@@ -1,0 +1,14 @@
+name: google search
+base_url: https://www.google.com
+variables:
+  keyword: httprunner
+request:
+  url: /search
+  method: GET
+  params:
+    q: $keyword
+extract:
+  - title: "<title>(.*)</title>"
+validate:
+  - eq: ["status_code", 200]
+  - startswith: ["$title", "httprunner"]
