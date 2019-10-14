@@ -1,0 +1,11 @@
+config:
+  name: "testsuite google search"
+  base_url: ${ENV(base_url)}
+  variables:
+    keyword: httprunner in testsuite
+
+testcases:
+  - name: call validate_title
+    testcase: testcases/validate_title.yml
+  - name: call validate_title2
+    testcase: testcases/validate_title.yml
