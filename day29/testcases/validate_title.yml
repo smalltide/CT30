@@ -1,0 +1,13 @@
+config:
+  name: testcase validate search result
+  base_url: ${ENV(base_url)}
+  variables:
+    keyword: httprunner in testcase
+
+teststeps:
+  - name: validate title "$keyword"
+    api: api/google_search.yml
+    extract:
+      - title: "<title>(.*)</title>"
+    validate:
+      - startswith: ["$title", "$keyword"]

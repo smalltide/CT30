@@ -1,0 +1,11 @@
+name: google search
+base_url: ${ENV(base_url)}
+variables:
+  keyword: httprunner in api
+request:
+  url: /search
+  method: GET
+  params:
+    q: $keyword
+validate:
+  - eq: ["status_code", 200]
